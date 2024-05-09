@@ -1,13 +1,73 @@
-body {
+:root {
+  --color-bg-body:#000000;
+  --color-bg: #5a5a5a ;
+  --color-text: #ffffff; 
+  --color-border: red;
+  --test-border: 2px solid var(--color-border);
+}
+ body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ }
+
+ h2 {
+  text-indent: 3ch;
+ }
+
+p {
+  text-indent: 3ch;
+  text-align: justify;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: 19px;
+  width: 95%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Header {
+  border: var(--test-border);
+  width: 100%;
+  height: 8vh;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
 }
+.Logo {
+  margin-left: 25px;
+}
+.Logo > a {
+  font-size: 30px;
+}
+
+.Page {
+  border: var(--test-border);
+  width: 100%;
+  min-width: 400px;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .PageBox{
+  border: var(--test-border);
+  position: relative;
+  width: 80%;
+  min-width: 390px;
+  height: fit-content;
+  
+ }
+
+ .Item {
+  border: var(--test-border);
+  height: 60px;
+  height: fit-content;
+  
+ }
+
+ .Links {
+  border: var(--test-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+ }
