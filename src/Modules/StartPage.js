@@ -48,7 +48,8 @@ export default function StartPage() {
 
                 <div className='Item'>
                     <div className='Links'>
-                        <Link to="/Post_page">Post</Link>
+                       <Link to="/Post_page">Post</Link>
+                       <Link to="/Users_page">Users</Link>
                     </div>
                 </div>
 

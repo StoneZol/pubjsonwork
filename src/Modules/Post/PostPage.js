@@ -13,9 +13,7 @@ export default function PostPage() {
       setPosts(response.data);
       console.log(response.data);
     })
-    .catch(error =>{
-      console.error('Error fetching data:', error);
-    })
+    .catch(error => console.error('Error fetching data:', error))
   }, [])
   return (
     <div className='Page'>
