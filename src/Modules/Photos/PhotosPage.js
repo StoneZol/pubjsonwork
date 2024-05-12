@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import PhotosList from './PhotosList'
+import Photo from './Photo'
 
 export default function PhotosPage() {
     const [photos, setPhotos] = useState([])
@@ -20,4 +21,4 @@ export default function PhotosPage() {
           </div>
         </div>
       )
-}
+    }
