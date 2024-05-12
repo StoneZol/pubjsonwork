@@ -5,6 +5,7 @@
   --color-border: red;
   --test-border: 2px solid var(--color-border);
 }
+
  body {
   margin: 0;
  }

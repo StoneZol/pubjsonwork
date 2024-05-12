@@ -1,9 +1,8 @@
 import React from 'react'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Route, Link, } from 'react-router-dom';
 import PostList from './PostList';
-import Post from './Post';
+
 
 export default function PostPage() {
   const [posts, setPosts] = useState([]); // post hook

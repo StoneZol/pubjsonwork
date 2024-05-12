@@ -16,14 +16,19 @@ export default function Post(){
         .catch(error => console.error(error)) //not ok
     }, [id])
     return(
-      <div className='Item'>
-        {post && ( // if we have post, we create h2 and p
-        <>
-          <h2>{post.title}</h2>
-          <p>{post.body}</p>
-        </>
-      )}
+      <div className="Page">
+        <div className="PageBox">
+           <div className='Item'>
+          {post && ( // if we have post, we create h2 and p
+         <>
+            <h2>{post.title}</h2>
+            <p>{post.body}</p>
+         </>
+          )}
         <Link to={'/Post_page'}>Back</Link>
+          </div>
+        </div>
       </div>
+
     )
   }
