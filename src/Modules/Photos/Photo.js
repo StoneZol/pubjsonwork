@@ -14,7 +14,7 @@ export default function Photo() {
             console.log(photo.url)
         })
         .catch(error => console.log(error))
-    }, id)
+    }, [id])
   return (
     <div className='Page'>
         <div className='PageBox'>

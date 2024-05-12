@@ -4,17 +4,17 @@ import { Link } from 'react-router-dom'
 
 export default function PhotosList({photos}) {
     const [lastPage, setLastPage] = useState(1);
-    const [curPage, setCurPage] = useState(3);
+    const [curPage, setCurPage] = useState(1);
     const [futurPage, serFuturPage] = useState();
 
-    const photosPerPage = 100;
-            const indexOfLastPhoto = curPage * photosPerPage;
+        const photosPerPage = 50;
+        const indexOfLastPhoto = curPage * photosPerPage;
         const indexOfFirstPhoto = indexOfLastPhoto - photosPerPage;
         const currentPhotos = photos.slice(indexOfFirstPhoto, indexOfLastPhoto);
     
     useEffect(()=>{
         serFuturPage(photos.length/photosPerPage)
-    })
+    },[photos])
 
 function clickUp() {
     if (curPage < futurPage) {
